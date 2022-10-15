@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <img src="./images/logo-white.png" alt="logo" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">COMPANY</a>
+            <ul class="drop-down">
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">History</a></li>
+            </ul>
+          </li>
+          <li><a href="#">DRAMA</a></li>
+          <li><a href="#">MOVIE</a></li>
+          <li>
+            <a href="#">MUSIC</a>
+            <ul class="drop-down">
+              <li><a href="#">Music</a></li>
+              <li><a href="#">OST</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">SHOW</a>
+            <ul class="drop-down">
+              <li><a href="#">Musical</a></li>
+              <li><a href="#">Concert</a></li>
+              <li><a href="#">Exhibition</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">ARTIST</a>
+            <ul class="drop-down">
+              <li><a href="#">Actor/Actress</a></li>
+              <li><a href="#">Singer</a></li>
+              <li><a href="#">BIGWHALEy</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">BIGFRIENDS</a>
+            <ul class="drop-down">
+              <li><a href="#">DOGTV</a></li>
+              <li><a href="#">HEYMARI</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">PR</a>
+            <ul class="drop-down">
+              <li><a href="#">Notice</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Viral</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+            <ul class="drop-down">
+              <li><a href="#">찾아오시는 길</a></li>
+              <li><a href="#">사업제안</a></li>
+              <li><a href="#">Audition</a></li>
+              <li><a href="#">채용공고</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="toggle">
+        <button class="hambtn">
+          <img src="./images/hamberger-white.png" alt="" />
+        </button>
+      </div>
+    </header>
+    <div class="menu1">
+      <div class="clicked_nav">
+        <img src="./images/logo.png" alt="" />
+        <button class="nonhambtn">
+          <img src="./images/nonehamberger.png" alt="" />
+        </button>
+      </div>
+      <div class="clicked_content">
+        <ul>
+          <li>
+            COMPANY
+            <ul>
+              <li>Profile</li>
+              <li>Vision</li>
+              <li>History</li>
+            </ul>
+          </li>
+          <li>DRAMA</li>
+          <li>MOVIE</li>
+          <li>
+            MUSIC
+            <ul>
+              <li>Album</li>
+              <li>OST</li>
+            </ul>
+          </li>
+          <li>
+            SHOW
+            <ul>
+              <li>Musical</li>
+              <li>Concert</li>
+              <li>Exhibition</li>
+            </ul>
+          </li>
+          <li>
+            ARTIST
+            <ul>
+              <li>Actor/Actress</li>
+              <li>Singer</li>
+              <li>BIGWHALE</li>
+            </ul>
+          </li>
+          <li>
+            BIGFRIENDS
+            <ul>
+              <li>DOGTV</li>
+              <li>HEYMARI</li>
+            </ul>
+          </li>
+          <li>
+            PR
+            <ul>
+              <li>Notice</li>
+              <li>News</li>
+              <li>Viral</li>
+            </ul>
+          </li>
+          <li>
+            CONTACT
+            <ul>
+              <li>찾아오시는 길</li>
+              <li>사업제안</li>
+              <li>Auditon</li>
+              <li>채용공고</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="clicked_login"><a href="#">관리자 로그인</a></div>
+    </div>
+    <main></main>
+    <section>
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+    <footer>
+      <div></div>
+      <div></div>
+    </footer>
+    <script>
+      window.addEventListener("scroll", function () {
+        let header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 300);
+      });
+
+      const togglebtn = document.querySelector(".hambtn");
+      const menu = document.querySelector(".menu1");
+      togglebtn.addEventListener("click", () => {
+        menu.classList.toggle("look");
+      });
+
+      const togglebtn2 = document.querySelector(".nonhambtn");
+      const menu2 = document.querySelector(".menu1");
+      togglebtn2.addEventListener("click", () => {
+        menu2.classList.remove("look");
+      });
+    </script>
+  </body>
+</html>
