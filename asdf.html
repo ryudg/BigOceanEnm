@@ -4,46 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .m {
+        margin: 0 auto;
+        width: 600px;
+        height: 600px;
+        background-color: aqua;
+        overflow: hidden;
+      }
+      .m1 {
+        background-color: beige;
+        width: 100%;
+        height: 100%;
+      }
+      .m2 {
+        background-color: blueviolet;
+        width: 100%;
+        height: 100%;
+      }
+      .m2.up {
+        transform: translateY(-100%);
+        transition: 1s;
+      }
+      .m2.down {
+        transform: translateY(100%);
+        transition: 1s;
+      }
+    </style>
     <title>Document</title>
-    <link rel="stylesheet" href="./asdf.css" />
   </head>
   <body>
-    <div class="dropdown">
-      <nav>
-        <img
-          class="logo"
-          src="https://ssl.pstatic.net/static/newsstand/up/2016/0325/nsd185817651.png"
-          alt=""
-        />
-        <ul>
-          <li><a href="#">home</a></li>
-          <li>
-            <a href="#">tutorials</a>
-            <ul>
-              <li><a href="#">html</a></li>
-              <li><a href="#">css</a></li>
-              <li><a href="#">javascript</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">web design</a>
-            <ul>
-              <li><a href="#">front</a></li>
-              <li><a href="#">back</a></li>
-              <li>
-                <a href="#">others</a>
-                <ul>
-                  <li><a href="#">link</a></li>
-                  <li><a href="#">work</a></li>
-                  <li><a href="#">status</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">feedback</a></li>
-        </ul>
-      </nav>
+    <div class="m">
+      <div class="m1">1</div>
+      <div class="m2">2</div>
     </div>
+    <script>
+      const mouseEnter = document.querySelector(".m1");
+      const mouseLeave = document.querySelector(".m2");
+      const upDiv = document.querySelector(".m2");
+      mouseEnter.addEventListener("mouseenter", () => {
+        upDiv.classList.toggle("up");
+        upDiv.classList.remove("down");
+      });
+      mouseLeave.addEventListener("mouseleave", () => {
+        upDiv.classList.toggle("down");
+        upDiv.classList.remove("up");
+      });
+    </script>
   </body>
 </html>
