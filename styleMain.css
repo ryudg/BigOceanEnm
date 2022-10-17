@@ -99,8 +99,8 @@ main .sub_text p {
   position: absolute;
   color: #939393;
   width: 500px;
-  top: 50%;
-  left: calc(50% - 250px);
+  top: 55%;
+  left: calc(50% - 210px);
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
@@ -112,18 +112,19 @@ main .sub_text p {
   height: 40px;
 }
 .main_btn a {
-  padding: 20px 40px;
+  padding: 20px;
   color: #000;
   background-color: #fff;
-  border-radius: 40px;
+  border-radius: 60px;
   font-size: 14px;
   font-weight: 500;
 }
 .main_btn a:hover {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid #fff;
+  padding: 18px;
   color: #fff;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 /*  */
 /*  */
@@ -154,23 +155,13 @@ main .sub_text p {
     color: #939393;
     width: 300px;
     font-size: 10px;
-    top: calc(50% - 15px);
-    left: calc(50% - 150px);
+    top: calc(50% - 5px);
+    left: calc(50% - 120px);
   }
   .main_btn {
     position: absolute;
     top: 70%;
     left: calc(50% - 85px);
-    width: 170px;
-    height: 40px;
-  }
-  .main_btn a {
-    padding: 10px 25px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 500;
   }
 }
 @media (max-width: 720px) {
@@ -194,22 +185,20 @@ main .sub_text p {
     width: 300px;
     font-size: 8px;
     top: 55%;
-    left: calc(50% - 150px);
+    left: calc(50% - 125px);
   }
   .main_btn {
     position: absolute;
     top: 70%;
-    left: calc(50% - 65px);
-    width: 130px;
-    height: 20px;
+    left: calc(50% - 50px);
   }
   .main_btn a {
-    padding: 5px 15px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 20px;
     font-size: 10px;
     font-weight: 500;
+    padding: 10px;
+  }
+  .main_btn a:hover {
+    padding: 8px;
   }
 }
 @keyframes animate {

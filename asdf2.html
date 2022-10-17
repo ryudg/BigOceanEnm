@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .box img {
+      width: 100%;
+      height: 100%;
+    }
+    .box .slide1 {
+      position: absolute;
+    }
+  </style>
+  <script>
+    var index = 0; //이미지에 접근하는 인덱스
+    window.onload = function () {
+      slideShow();
+    };
+
+    function slideShow() {
+      var i;
+      var x = document.getElementsByClassName("slide1"); //slide1에 대한 dom 참조
+      for (i = 0; i < x.length; i++) {
+        x[i].style.opacity = 0; //처음에 전부 display를 none으로 한다.
+        x[i].style.transition = "1s"; //처음에 전부 display를 none으로 한다.
+      }
+      index++;
+      if (index > x.length) {
+        index = 1; //인덱스가 초과되면 1로 변경
+      }
+      x[index - 1].style.opacity = 1; //해당 인덱스는 block으로
+      x[index - 1].style.transition = "1s"; //해당 인덱스는 block으로
+      setTimeout(slideShow, 4000); //함수를 4초마다 호출
+    }
+  </script>
+  <body>
+    <div class="box">
+      <img class="slide1" src="./images/subbg1.png" />
+      <img class="slide1" src="./images/subbg3.png" />
+      <img class="slide1" src="./images/subbg4.png" />
+    </div>
+  </body>
+</html>

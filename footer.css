@@ -1,0 +1,83 @@
+footer {
+  background-color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #6f6f6f;
+  text-align: center;
+}
+.foot1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 2em;
+  padding: 30px;
+}
+.sns ul {
+  display: flex;
+  justify-content: center;
+}
+.sns ul li {
+  padding: 0 15px;
+}
+.sns ul li a {
+  font-size: 18px;
+  color: #fff;
+}
+.sns ul li a:hover {
+  color: #007afe;
+  transition: 0.5s;
+}
+.foot2 {
+  background-color: #1c1c1c;
+}
+.foot2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot2 ul li {
+  padding: 50px;
+}
+.foot2 ul li a {
+  color: #6f6f6f;
+}
+.foot2 ul li a:hover {
+  color: #007afe;
+  transition: 0.5s;
+}
+
+.fixedup a {
+  position: fixed;
+  color: #007afe;
+  font-size: 36px;
+  bottom: 5%;
+  right: 3%;
+  opacity: 0;
+}
+.fixedup a.upbtn {
+  opacity: 1;
+  transition: 2s;
+}
+@media (max-width: 1080px) {
+  .foot1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footlogo {
+    padding: 30px;
+  }
+  .foot2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .foot2 ul li {
+    padding: 10px;
+  }
+  .fixedup a {
+    display: none;
+  }
+}

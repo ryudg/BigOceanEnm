@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BIG OCEAN ENM</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -81,7 +81,9 @@
     </header>
     <div class="clicked_menu">
       <div class="clicked_nav">
-        <img class="cicked_logo" src="./images/logo.png" alt="" />
+        <a href="index.html"
+          ><img class="cicked_logo" src="./images/logo.png" alt=""
+        /></a>
         <button class="nonhambtn">
           <img src="./images/nonehamberger.png" alt="" />
         </button>
@@ -198,7 +200,7 @@
         <p>모든 콘텐츠를 담을 수 있는 엔터테인먼트의 큰 바다가 되겠습니다.</p>
       </div>
       <div class="main_btn">
-        <a href="#">ABOUT COMPANY</a>
+        <a href="./sub1.html">ABOUT COMPANY</a>
       </div>
     </main>
     <section>
@@ -295,7 +297,7 @@
                 합니다.
               </p>
               <div class="articl2_content1_btn">
-                <a href="#"> ABOUT COMPANY </a>
+                <a href="#">ABOUT COMPANY </a>
               </div>
             </div>
           </div>
@@ -361,14 +363,79 @@
               사람들에게 최적화된 교육과 참여의 기회를 제공합니다. 관심있는
               분들의 많은 참여 바랍니다.
             </p>
+            <div class="article3_btn">
+              <a href="#">
+                <i class="fa-solid fa-circle-play"></i>
+                오디션 지원하기
+              </a>
+            </div>
           </div>
-          <div class="article3_content2"></div>
+          <div class="article3_content2">
+            <img src="./images/bg-main-audition.png" alt="" />
+          </div>
         </div>
       </article>
     </section>
     <footer>
-      <div></div>
-      <div></div>
+      <div class="foot1">
+        <div>
+          <p>
+            (주) 빅오션이엔엠 | 대표 : 신인수, 이성진 <br />
+            06149 서울시 강남구 선릉로99길 12 | <br />
+            사업자 등록번호 435-88-01580
+          </p>
+        </div>
+        <div class="footlogo">
+          <a href="./index.html">
+            <img src="./images/logo-white.png" alt="" />
+          </a>
+        </div>
+        <div class="sns">
+          <ul>
+            <li>
+              <a href="https://twitter.com/bigoceanenm" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/people/%EB%B9%85%EC%98%A4%EC%85%98%EC%9D%B4%EC%97%94%EC%97%A0/100063848029885/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bigoceanenm/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCr6hzco6egLXTqD2PQ3-kNQ"
+                target="_blank"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+          <div>© BIG OCEAN ENM. All Rights Reserved.</div>
+        </div>
+      </div>
+      <div class="foot2">
+        <ul>
+          <li><a href="#">법적고지</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">윤리경영</a></li>
+          <li><a href="#">찾아오시는 길</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </div>
+      <div class="fixedup">
+        <a class="fixedupa" href="#">
+          <i class="fa-solid fa-circle-up"></i>
+        </a>
+      </div>
     </footer>
     <script>
       window.addEventListener("scroll", function () {
@@ -414,6 +481,15 @@
           boxdw.classList.remove("up");
         });
       });
+
+      window.addEventListener("scroll", function () {
+        let upbtn = document.querySelector(".fixedupa");
+        upbtn.classList.toggle("upbtn", window.scrollY > 300);
+      });
     </script>
+    <script
+      src="https://kit.fontawesome.com/67eff22c15.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
