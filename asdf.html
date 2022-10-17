@@ -12,21 +12,21 @@
         background-color: aqua;
         overflow: hidden;
       }
-      .m1 {
+      .mup {
         background-color: beige;
         width: 100%;
         height: 100%;
       }
-      .m2 {
+      .mdw {
         background-color: blueviolet;
         width: 100%;
         height: 100%;
       }
-      .m2.up {
+      .mdw.up {
         transform: translateY(-100%);
         transition: 1s;
       }
-      .m2.down {
+      .mdw.down {
         transform: translateY(100%);
         transition: 1s;
       }
@@ -35,13 +35,13 @@
   </head>
   <body>
     <div class="m">
-      <div class="m1">1</div>
-      <div class="m2">2</div>
+      <div class="mup">1</div>
+      <div class="mdw">2</div>
     </div>
     <script>
-      const mouseEnter = document.querySelector(".m1");
-      const mouseLeave = document.querySelector(".m2");
-      const upDiv = document.querySelector(".m2");
+      const mouseEnter = document.querySelector(".mup");
+      const mouseLeave = document.querySelector(".mdw");
+      const upDiv = document.querySelector(".mdw");
       mouseEnter.addEventListener("mouseenter", () => {
         upDiv.classList.toggle("up");
         upDiv.classList.remove("down");

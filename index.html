@@ -205,26 +205,74 @@
       <article class="article1">
         <div class="article1_section">
           <div class="article1_section_content1 bgimg img50">
-            <div class="content1_defualt">article1_section_content1</div>
-            <div class="content1_dark"></div>
+            <div class="updw">
+              <div class="content1_defualt">
+                <p class="innerText">DRAMA</p>
+              </div>
+              <div class="content1_dark">
+                <a class="innLink" href="#">DRAMA</a>
+              </div>
+            </div>
           </div>
           <div class="article1_section_content2 bgimg img50">
-            article1_section_content2
+            <div class="updw">
+              <div class="content2_defualt">
+                <p class="innerText">MOVIE</p>
+              </div>
+              <div class="content2_dark">
+                <a class="innLink" href="#">MOVIE</a>
+              </div>
+            </div>
           </div>
           <div class="article1_section_content3 bgimg img50">
-            article1_section_content3
+            <div class="updw">
+              <div class="content3_defualt">
+                <p class="innerText">MUSIC</p>
+              </div>
+              <div class="content3_dark">
+                <a class="innLink" href="#">MUSIC</a>
+              </div>
+            </div>
           </div>
           <div class="article1_section_content4 bgimg img50">
-            article1_section_content4
+            <div class="updw">
+              <div class="content4_defualt">
+                <p class="innerText">ARTIST</p>
+              </div>
+              <div class="content4_dark">
+                <a class="innLink" href="#">ARTIST</a>
+              </div>
+            </div>
           </div>
           <div class="article1_section_content5 bgimg img30">
-            article1_section_content5
+            <div class="updw">
+              <div class="content5_defualt">
+                <p class="innerText">SHOW</p>
+              </div>
+              <div class="content5_dark">
+                <a class="innLink" href="#">SHOW</a>
+              </div>
+            </div>
           </div>
           <div class="article1_section_content6 bgimg img30">
-            article1_section_content6
+            <div class="updw">
+              <div class="content6_defualt">
+                <p class="innerText">NEWS</p>
+              </div>
+              <div class="content6_dark">
+                <a class="innLink" href="#">NEWS</a>
+              </div>
+            </div>
           </div>
           <div class="article1_section_content7 bgimg img30">
-            article1_section_content7
+            <div class="updw">
+              <div class="content7_defualt">
+                <p class="innerText">VIRAL</p>
+              </div>
+              <div class="content7_dark">
+                <a class="innLink" href="#">VIRAL</a>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -246,6 +294,9 @@
                 엔터테인먼트 콘텐츠를 제작해 무한한 경제 가치를 창출하고자
                 합니다.
               </p>
+              <div class="articl2_content1_btn">
+                <a href="#"> ABOUT COMPANY </a>
+              </div>
             </div>
           </div>
           <div class="articl2_content2">
@@ -299,7 +350,21 @@
           </div>
         </div>
       </article>
-      <article class="article3"></article>
+      <article class="article3">
+        <div class="article3_contents">
+          <div class="article3_content1">
+            <p>저희와 함께할 아티스트를 찾습니다</p>
+            <p>Audition</p>
+            <p>
+              전문화된 인력과 체계적인 시스템으로 구성된 빅오션ENM은 수많은
+              엔터테이너를 발굴, 육성해왔으며 엔터테이너를 꿈꾸는 모든
+              사람들에게 최적화된 교육과 참여의 기회를 제공합니다. 관심있는
+              분들의 많은 참여 바랍니다.
+            </p>
+          </div>
+          <div class="article3_content2"></div>
+        </div>
+      </article>
     </section>
     <footer>
       <div></div>
@@ -321,6 +386,33 @@
       const menu2 = document.querySelector(".clicked_menu");
       togglebtn2.addEventListener("click", () => {
         menu2.classList.remove("look");
+      });
+
+      /* const mouseEnter = document.querySelector(".updw");
+      const mouseLeave = document.querySelector(".updw");
+      const upDiv = document.querySelector(".updw");
+      mouseEnter.addEventListener("mouseenter", () => {
+        upDiv.classList.toggle("up");
+        upDiv.classList.remove("down");
+      });
+      mouseLeave.addEventListener("mouseleave", () => {
+        upDiv.classList.toggle("down");
+        upDiv.classList.remove("up");
+      }); */
+
+      const mouseEnter = document.querySelectorAll(".updw");
+      mouseEnter.forEach((boxup) => {
+        boxup.addEventListener("mouseenter", () => {
+          boxup.classList.toggle("up");
+          boxup.classList.remove("down");
+        });
+      });
+      const mouseLeave = document.querySelectorAll(".updw");
+      mouseEnter.forEach((boxdw) => {
+        boxdw.addEventListener("mouseleave", () => {
+          boxdw.classList.toggle("down");
+          boxdw.classList.remove("up");
+        });
       });
     </script>
   </body>

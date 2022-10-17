@@ -95,12 +95,12 @@ main [id="slide04"]:checked ~ .slidewrap .slidelist > li {
   color: #fff;
   animation: animate 5s ease-in-out infinite;
 }
-main .sub_text {
+main .sub_text p {
   position: absolute;
   color: #939393;
-  width: 400px;
+  width: 500px;
   top: 50%;
-  left: calc(50% - 200px);
+  left: calc(50% - 250px);
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }
@@ -149,13 +149,13 @@ main .sub_text {
     width: 430px;
     height: 40px;
   }
-  main .sub_text {
+  main .sub_text p {
     position: absolute;
     color: #939393;
-    width: 260px;
+    width: 300px;
     font-size: 10px;
     top: calc(50% - 15px);
-    left: calc(50% - 130px);
+    left: calc(50% - 150px);
   }
   .main_btn {
     position: absolute;
@@ -188,13 +188,13 @@ main .sub_text {
     width: 250px;
     height: 25px;
   }
-  main .sub_text {
+  main .sub_text p {
     position: absolute;
     color: #939393;
-    width: 260px;
+    width: 300px;
     font-size: 8px;
-    top: 50%;
-    left: calc(50% - 125px);
+    top: 55%;
+    left: calc(50% - 150px);
   }
   .main_btn {
     position: absolute;

@@ -83,6 +83,7 @@ header nav ul li:hover > ul {
   height: 100%;
   overflow: auto;
   z-index: 1001;
+  overflow-x: hidden;
 }
 .clicked_menu.look {
   display: block;
