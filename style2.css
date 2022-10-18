@@ -224,7 +224,7 @@ section.arti1 {
     left: calc(50% - 60px);
   }
   .textbox p:first-child {
-    font-size: 34px;
+    font-size: 26px;
   }
   .textbox p:last-child {
     font-size: 10px;
