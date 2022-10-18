@@ -47,7 +47,7 @@ main {
   font-family: "Roboto", sans-serif;
 }
 .textbox p:first-child {
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 600;
 }
 .textbox p:last-child {
